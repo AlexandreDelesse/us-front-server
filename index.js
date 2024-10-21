@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Pour toutes les autres routes, renvoie le fichier index.html de React
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.send('coucou')
 });
 
 app.listen(PORT, () => {
